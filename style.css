@@ -18,14 +18,10 @@ body {
     background-color: var(--Cream);
     border-radius: 12px;
     font-size: 14px;
-    /* display: inline-block;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0; */
 }
 
 h1 {
-    padding: 0;
+    padding: 0.3em 0;
     margin: 0;
 }
 
@@ -35,12 +31,12 @@ h2 {
 }
 
 h3 {
-    padding: 0;
+    padding: 0.3em 0;
     margin: 0;
 }
 
 p {
-    padding: 0;
+    padding: 0.3em 0;
     margin: 0;
 }
 
@@ -65,28 +61,42 @@ p {
     font-size: 1em;
 }
 
-.buttom {
+.btn {
     background-color: var(--Dark-cyan);
     color: var(--White);
     border-radius: 12px;
     padding: 20px;
-    font-family: var(--montserrat);
-    font-weight: 700;
-    text-decoration: none;
-    text-align: center;
+    border: none;
     font-size: 1em;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
 }
 
-.buttom:hover {
+
+.btn img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--White);
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.btn:hover {
     background-color: var(--Very-dark-blue);
     color: var(--White);
     border-radius: 12px;
     padding: 20px;
-    font-family: var(--montserrat);
-    font-weight: 700;
-    text-decoration: none;
-    text-align: center;
+    border: none;
     font-size: 1em;
+    cursor: pointer;
 }
 
 .primaryPrice {
@@ -99,6 +109,7 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 2em 0;
 }
 
 .secondaryPrice {
@@ -111,22 +122,29 @@ p {
 
 .generalContainer {
     background-color: var(--White);
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     display: flex;
     flex-direction: column-reverse;
     overflow: auto;
     border-radius: 12px;
-    align-items: center;
+    max-width: 375px;
+}
+
+.generalContainer .image img {
+    width: 100%;
+    height: auto;
 }
 
 .contentContainer {
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    justify-content: space-between;
+    padding: 2em;
 }
 
-.image {
-    object-fit: cover;
+.attribution {
+    max-width: 375px;
+    margin: 2em auto;
+    text-align: center;
+
 }
