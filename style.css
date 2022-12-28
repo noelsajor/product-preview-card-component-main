@@ -2,16 +2,13 @@
     --montserrat: 'Montserrat', sans-serif;
     --fraunces: 'Fraunces', serif;
 
-    /* ### Primary */
-
     --Dark-cyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
-
-    /* ### Neutral */
-
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
+    --feaured-image: src="images/image-product-mobile.jpg";
+
 }
 
 body {
@@ -119,23 +116,28 @@ p {
     font-size: 1em;
 }
 
+.cardsContainer {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    max-width: 1440px;
+    margin: 5em auto;
 
-.generalContainer {
+}
+
+
+.card {
     background-color: var(--White);
     margin: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     overflow: auto;
     border-radius: 12px;
-    max-width: 375px;
+    /* max-width: 600px; */
 }
 
-.generalContainer .image img {
-    width: 100%;
-    height: auto;
-}
 
-.contentContainer {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -143,8 +145,42 @@ p {
 }
 
 .attribution {
-    max-width: 375px;
+    max-width: 1440px;
     margin: 2em auto;
     text-align: center;
 
+}
+
+@media (max-width:600px) {
+    .cardsContainer {
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+        max-width: 1440px;
+        margin: 5em auto;
+
+    }
+
+
+    .card {
+        background-color: var(--White);
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: auto;
+        border-radius: 12px;
+        /* max-width: 375px; */
+    }
+
+    .card .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2em;
+    }
 }

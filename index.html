@@ -16,30 +16,33 @@
   </style> -->
 </head>
 <body>
-  <div class="generalContainer">
-    <div class="contentContainer">
-      <h3 class="subHeading">Perfume</h3>
-      <h1 class="heading">Gabrielle Essence Eau De Parfum</h1>
-      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <div class="price">
-        <div class="primaryPrice">
-          $149.99
+  <div class="cardsContainer"> 
+    <div class="card">
+      <div class="content">
+        <h3 class="subHeading">Perfume</h3>
+        <h1 class="heading">Gabrielle Essence Eau De Parfum</h1>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <div class="primaryPrice">
+            $149.99
+          </div>
+          <div class="secondaryPrice">
+            $169.99
+          </div>
         </div>
-        <div class="secondaryPrice">
-          $169.99
-        </div>
+        <button class="btn">
+          <img src="images/icon-cart.svg" alt="cart">
+          <a href="#">Add to Cart</a>
+        </button>
       </div>
-      <button class="btn">
-        <img src="images/icon-cart.svg" alt="cart">
-        <a href="#">Add to Cart</a>
-      </button>
-    </div>
-    <div class="image">
-      <img src="images/image-product-mobile.jpg" alt="Parfum">
-    </div>
-  </div>  
+      <picture class="image">
+        <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)"> 
+        <img src="images/image-product-mobile.jpg" alt="Parfum">
+      </picture>
+    </div>  
+  </div>   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Jose A. Leon</a>.
